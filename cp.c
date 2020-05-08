@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	fstat(fd_src, &st);
 	if (st.type == T_DIR)
 	{
-		printf(1, "source file is a directory, the files in that directory is:\n");
+		printf(1, "source file is a directory\n");
 		exit();
 	}
 
@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
     // printf(1,"%s\n",com);
 
 	//buka file
-	int fd_dest = open(com, O_WRONLY|O_CREATE);
+	int fd_dest = open(com, O_RDWR|O_CREATE);
 	if (fd_dest == -1)
 	{
 		printf(1, "create dest file failed\n");
