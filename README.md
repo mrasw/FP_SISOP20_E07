@@ -1,6 +1,6 @@
 # FP_SISOP20_E07
 ## CP
-```
+```c
 #include "types.h"
 #include "stat.h"
 #include "user.h"
@@ -77,4 +77,4 @@ int main(int argc, char *argv[])
 	//akhir
 	exit();
 }
-```c
+```
